@@ -1,3 +1,4 @@
+import 'package:code_review_demo/constants.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -11,6 +12,12 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Home"),
+        actions: [
+          IconButton(
+            onPressed: () => Navigator.of(context).pushNamed(Routes.SETTINGS),
+            icon: Icon(Icons.settings),
+          ),
+        ],
       ),
       body: Center(
         child: Text("This is a home page."),
