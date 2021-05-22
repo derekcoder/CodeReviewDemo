@@ -20,7 +20,12 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       body: Center(
-        child: Text("This is a home page."),
+        child: TextButton(
+          onPressed: () {
+            print("Do something");
+          },
+          child: Text("Do something"),
+        ),
       ),
     );
   }
