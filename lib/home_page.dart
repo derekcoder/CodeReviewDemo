@@ -21,10 +21,8 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Center(
         child: TextButton(
-          onPressed: () {
-            print("Do something");
-          },
-          child: Text("Do something"),
+          onPressed: () => Navigator.of(context).pushNamed(Routes.ABOUT),
+          child: Text("Show About Page"),
         ),
       ),
     );

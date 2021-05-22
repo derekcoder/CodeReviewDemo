@@ -1,3 +1,4 @@
+import 'package:code_review_demo/about_page.dart';
 import 'package:code_review_demo/constants.dart';
 import 'package:code_review_demo/home_page.dart';
 import 'package:code_review_demo/settings_page.dart';
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
       routes: {
         Routes.HOME: (context) => HomePage(),
         Routes.SETTINGS: (context) => SettingsPage(),
+        Routes.ABOUT: (context) => AboutPage(),
       },
       initialRoute: Routes.HOME,
     );
